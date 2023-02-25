@@ -34,6 +34,8 @@ Then(/^I choose activity$/, async () => {
 });
 
 Then(/^I should see calories card$/, async () => {
-    await HomePage.verifyCaloriesCard()
+    await HomePage.verifyCaloriesCard();
+    await driver.pause(1000);
+    await driver.closeApp();
 });
 
